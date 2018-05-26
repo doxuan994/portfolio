@@ -1,0 +1,142 @@
+@media (min-width: 1000px) {
+
+    .carousel-wrapper .carousel-item h2,
+    .carousel-wrapper .carousel-item p {
+        line-height: 2.5;
+        text-align: center;
+        font-size: 45px;
+        color: #fff;
+
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+        -ms-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+    }
+    
+    .carousel-wrapper .carousel-item p {
+        font-size: 20px;
+
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+        -ms-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+    }
+
+}
+
+
+
+
+
+/* Carousel CSS
+--------------------------- */
+
+.carousel-wrapper {
+    position: relative;
+}
+
+.carousel-wrapper .carousel-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px 50px;
+    opacity: 0;
+
+
+
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+
+
+
+.carousel-wrapper .carousel-item .arrow {
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 50px;
+    height: 100%;
+    -webkit-tap-highlight-color: transparent;
+    background: url("http://dancort.es/assets/img/css-carousel/carousel-arrow-light.png") 50% 50%/20px no-repeat;
+}
+
+/* Let's set our jump link targets display: none; so that we're not
+  making the browser jump to the top of the carousel whenever a user
+  clicks on one of our arrow links. This attribute selector will target
+  any element whose id starts with 'target-item'. */
+
+[id^="target-item"] {
+   display: none;
+ }
+
+
+ .carousel-wrapper .item-1 {
+     z-index: 2;
+     opacity: 1;
+
+     -webkit-transition: all 0.4s ease-in-out;
+     -moz-transition: all 0.4s ease-in-out;
+     -o-transition: all 0.4s ease-in-out;
+     -ms-transition: all 0.4s ease-in-out;
+     transition: all 0.4s ease-in-out;
+ }
+
+ .carousel-wrapper *:target ~ .item-1 {
+     opacity: 0;
+
+     -webkit-transition: all 0.4s ease-in-out;
+     -moz-transition: all 0.4s ease-in-out;
+     -o-transition: all 0.4s ease-in-out;
+     -ms-transition: all 0.4s ease-in-out;
+     transition: all 0.4s ease-in-out;
+ }
+
+ .carousel-wrapper #target-item-1:target ~ .item-1 {
+     opacity: 1;
+
+     -webkit-transition: all 0.4s ease-in-out;
+     -moz-transition: all 0.4s ease-in-out;
+     -o-transition: all 0.4s ease-in-out;
+     -ms-transition: all 0.4s ease-in-out;
+     transition: all 0.4s ease-in-out;
+ }
+
+ .carousel-wrapper #target-item-2:target ~ .item-2, .carousel-wrapper #target-item-3:target ~ .item-3 {
+     z-index: 3;
+     opacity: 1;
+
+     -webkit-transition: all 0.4s ease-in-out;
+     -moz-transition: all 0.4s ease-in-out;
+     -o-transition: all 0.4s ease-in-out;
+     -ms-transition: all 0.4s ease-in-out;
+     transition: all 0.4s ease-in-out;
+ }
+
+
+/* Arrows
+--------------------------- */
+.carousel-wrapper .carousel-item .arrow.arrow-prev {
+    left: 0;
+}
+
+.carousel-wrapper .carousel-item .arrow.arrow-next {
+    right: 0;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.carousel-wrapper .carousel-item.light {
+    color: white;
+}
+
+.carousel-wrapper .carousel-item.light .arrow {
+    background: url("http://dancort.es/assets/img/css-carousel/carousel-arrow-light.png") 50% 50%/20px no-repeat;
+}

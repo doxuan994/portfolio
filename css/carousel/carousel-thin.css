@@ -1,0 +1,9 @@
+/* Mobile Screen
+--------------------------- */
+
+@media (max-width: 480px) {
+    .carousel-wrapper .carousel-item .arrow, .carousel-wrapper .carousel-item.light .arrow {
+        background-size: 10px;
+        background-position: 10px 50%;
+    }
+}

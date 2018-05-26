@@ -1,0 +1,130 @@
+/* mobile use */
+
+@media (max-width: 1000px) {
+
+    #menu,
+    #toggle-menu {
+        background-color: #495c70;
+    }
+
+    #toggle-menu,
+    #menu a {
+        padding: 16.799999999999px 32px;
+    }
+
+
+    label#toggle-menu {
+        text-transform: uppercase;
+        font-weight: 100;
+    }
+
+    #menu li,
+    #toggle-menu,
+    #menu a {
+        position: relative;
+        display: block;
+        color: white;
+        text-shadow: 1px 1px 0 rgba(0, 0, 0, .125);
+    }
+
+    #menu > ul > li {
+        text-transform: uppercase;
+        font-weight: 100;
+        background-color: #495c70;
+    }
+
+    #menu > ul > li > ul > li {
+        text-transform: none;
+        font-weight: 100;
+        background-color: #495c70;
+    }
+
+    #menu > ul > li > ul > li > ul  li {
+        background-color: #495c70;
+    }
+
+
+    /* Hide the ugly square box */
+    #menu input[type="checkbox"],
+    #menu ul span.drop-icon {
+        display: none;
+    }
+
+    #menu .main-menu {
+        display: none;
+    }
+
+    #tm:checked + .main-menu {
+        display: block;
+    }
+
+    #menu .sub-menu {
+        display: none;
+    }
+
+    #menu input[type="checkbox"]:checked + .sub-menu {
+        display: block;
+    }
+
+
+
+    /* Format drop-icon */
+    #toggle-menu .drop-icon,
+    #menu li label.drop-icon {
+        position: absolute;
+        right: 1.5em;
+        top: 1.25em;
+    }
+
+    #menu .drop-icon {
+        line-height: 1;
+    }
+
+
+    /* ---------------------------------------------
+                    NICE EFFECTS CSS
+    --------------------------------------------- */
+    #menu ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    #menu a {
+        transition: all .125s ease-in-out;
+        -webkit-transition: all .125s ease-in-out;
+    }
+
+    #menu a:hover {
+        background-color: white;
+        color: #09c;
+    }
+
+    /* Format menu */
+    #menu li,
+    #toggle-menu,
+    #menu .sub-menu {
+        border-color: rgba(0, 0, 0, .05);
+    }
+
+    #menu li,
+    #toggle-menu {
+        border-width: 0 0 1px;
+    }
+
+    /* Format sub-menu */
+    #menu .sub-menu {
+        background-color: #444;
+        border-width: 1px 1px 0;
+        margin: 0 1em;
+    }
+
+    #menu .sub-menu li:last-child {
+       border-width: 0;
+    }
+
+    #menu .sub-menu a:hover {
+        color: #444;
+    }
+
+
+}

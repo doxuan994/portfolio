@@ -1,0 +1,346 @@
+<!-- HTML5 DOCTYPE -->
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Xuan Do's Website</title>
+    <link rel="icon" type="image/png" href="images/favicon.gif">
+
+    <!-- Responsive meta tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS links
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+    <!-- GLOBAL CSS -->
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/port-wide.css">
+    <link rel="stylesheet" href="css/port-thin.css">
+
+    <!-- Header -->
+    <link rel="stylesheet" href="css/header/header.css">
+
+    <!-- Navigation -->
+    <link rel="stylesheet" href="css/navigation/navigation-wide.css">
+    <link rel="stylesheet" href="css/navigation/nagivation-thin.css">
+
+    <!-- Carousel -->
+    <link rel="stylesheet" href="css/carousel/carousel-wide.css">
+    <link rel="stylesheet" href="css/carousel/carousel-thin.css">
+
+    <!-- Flexbox Layout -->
+    <link rel="stylesheet" href="css/flexbox-layout/flexbox.css">
+    <link rel="stylesheet" href="css/flexbox-layout/flexbox-wide.css">
+    <link rel="stylesheet" href="css/flexbox-layout/flexbox-thin.css">
+
+    <!-- Skills -->
+    <link rel="stylesheet" href="css/skills/skills.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <!-- Projects -->
+    <link rel="stylesheet" href="css/projects/master.css">
+
+    <!-- Contact -->
+    <!-- <link rel="stylesheet" href="css/contact/contact.css"> -->
+    <link rel="stylesheet" href="/css/contact/contact-wide.css">
+
+    <!-- Footer -->
+    <link rel="stylesheet" href="css/footer/footer.css">
+
+
+</head>
+<body>
+    <!-- Start of Page -->
+    <div id="page" class="site">
+
+        <!-- Header Area
+        ------------------------------------------>
+
+        <header role="banner" id="masthead" class="site-header">
+            <h1>XD</h1>
+            <div id="top">
+                <!-- Navigation Area
+                ------------------------------------------>
+                <nav role="navigation" id="menu">
+                    <label for="tm" id="toggle-menu">Navigation <span class="drop-icon">▾</span></label>
+                    <input type="checkbox" id="tm">
+                    <ul class="main-menu clearfix">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li>
+                            <a href="#">Portfolio<span class="drop-icon">▾</span>
+                                <label title="Toggle Drop-down" class="drop-icon" for="sm1">▾</label>
+                            </a>
+                            <input type="checkbox" id="sm1">
+                            <ul class="sub-menu">
+                                <li><a href="#">Sub link</a></li>
+                                <li><a href="#">Sub link</a></li>
+                                <li>
+                                    <a href="#">Sub link<span class="drop-icon">▾</span>
+                                        <label title="Toggle Drop-down" class="drop-icon" for="sm2">▾</label>
+                                    </a>
+                                    <input type="checkbox" id="sm2">
+                                    <ul class="sub-menu sub-sub-menu">
+                                        <li><a href="#">Sub Sub link</a></li>
+                                        <li><a href="#">Sub Sub link</a></li>
+                                        <li><a href="#">Sub Sub link</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Contact Me</a></li>
+                        <li>
+                            <a href="#">Tutorials<span class="drop-icon">▾</span>
+                                <label title="Toggle Drop-down" class="drop-icon" for="sm1-1">▾</label>
+                            </a>
+                            <input type="checkbox" id="sm1-1">
+                            <ul class="sub-menu">
+                                <li><a href="#">Sub link</a></li>
+                                <li><a href="#">Sub link</a></li>
+                                <li>
+                                    <a href="#">Sub link<span class="drop-icon">▾</span>
+                                        <label title="Toggle Drop-down" class="drop-icon" for="sm2-1">▾</label>
+                                    </a>
+                                    <input type="checkbox" id="sm2-1">
+                                    <ul class="sub-menu sub-sub-menu">
+                                        <li><a href="#">Sub Sub link</a></li>
+                                        <li><a href="#">Sub Sub link</a></li>
+                                        <li><a href="#">Sub Sub link</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="">Resource</a></li>
+                        <li><a href="">Submit</a></li>
+                        <li><a href="">Advertise</a></li>
+                        <li><a href="">FAQ</a></li>
+                    </ul>
+                </nav>
+                <!-- // Navigation -->
+
+                <!-- Carousel Area
+                ------------------------------------------>
+                <div class="carousel-wrapper" style="height: 400px;">
+                    <span id="target-item-1"></span>
+                    <span id="target-item-2"></span>
+                    <span id="target-item-3"></span>
+
+                    <!-- Item 1 -->
+                    <div class="carousel-item item-1" style="background: linear-gradient(to bottom, rgba(147, 157, 173, 0.5), rgba(147, 157, 173, 1)), 50% 50% / cover;">
+                        <h2>Hello, I'm Xuan</h2>
+                        <p>I want to make the online world look awesome!</p>
+                        <a class="arrow arrow-prev" href="#target-item-3"></a>
+                        <a class="arrow arrow-next" href="#target-item-2"></a>
+                    </div> <!-- // Item 1 -->
+
+                    <!-- Item 2 -->
+                    <div class="carousel-item item-2" style="background: linear-gradient(to bottom, rgba(84, 99, 106, 0.30), rgba(84, 99, 106, 0.69)), 50% 50% / cover;">
+                        <h2>Welcome to my portfolio site</h2>
+                        <p>I'm currently living in the US.</p>
+                        <a class="arrow arrow-prev" href="#target-item-1"></a>
+                        <a class="arrow arrow-next" href="#target-item-3"></a>
+                    </div> <!-- // Item 2 -->
+
+                    <!-- Item 3 -->
+                    <div class="carousel-item item-3" style="background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.4)), 50% 50% / cover;">
+                        <h2>I'm also addicted to design websites.</h2>
+                        <p>I believe in the power of simplicity.</p>
+                        <a class="arrow arrow-prev" href="#target-item-2"></a>
+                        <a class="arrow arrow-next" href="#target-item-1"></a>
+                    </div> <!-- // Item 3 -->
+                </div>
+                <!-- // Carousel -->
+            </div>
+            <!-- // top -->
+        </header>
+        <!-- // Header -->
+
+
+        <!-- Main Contents Area
+        ------------------------------------------>
+
+        <div id="content" class="site-content row">
+
+            <!-- Main Content -->
+            <main role="main">
+
+                <!-- About Me -->
+                <section class="about-me">
+                    <h2 class="text-center">Me</h2>
+                    <!-- Flex Boxes start here -->
+
+                    <div class="content-wrap">
+                        <div class="content-wrap-item col-large-6">
+                            <p>Hi! I'm Xuan Do. </p>
+                            <p>A Web Designer</p>
+                        </div>
+                        <div class="content-wrap-item"><a href="#"><img src="images/happy.svg" alt="Xuan Do" class="me-img"></a></div>
+                    </div>
+                    <!-- // Flex Boxes end here -->
+                </section>
+
+                <!-- Skills -->
+                <section class="skills">
+                    <h2 class="text-center">Passion</h2>
+                    <div class="inner-text">
+                        <p>
+                            i am a freelance creator who can build a website from scratch with html & css <br>
+                            i am craving to make websites that are simple but convert the right messages and
+                            i am also loving build websites that look great as well as functional so i enjoy
+                            making web pages more interactive with javascript <br>
+                            i use flexbox layout for creating responsive websites
+                        </p>
+                    </div>
+
+                    <!-- Flex Boxes start here -->
+                    <div class="content-wrap">
+                        <div id="skills-1" class="content-wrap-item col-large-3">
+                            <!-- <div class="box-shadow">
+                                <a href="#"><img src="images/19.jpg" alt="HTML5"></a>
+                            </div> -->
+                            <div class="content-wrap-item style">
+                                <div class="ch-item ch-img-1"></div>
+                            </div>
+                            <a href="#"><h3>Lorem ipsum dolor</h3></a>
+                            <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div id="skills-2" class="content-wrap-item col-large-3">
+                            <!-- <div class="box-shadow">
+                                <a href="#"><img src="images/20.jpg" alt="CSS/CSS3"></a>
+                            </div> -->
+                            <div class="content-wrap-item style">
+                                <div class="ch-item ch-img-2"></div>
+                            </div>
+                            <a href="#"><h3>Lorem ipsum dolor</h3></a>
+                            <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div id="skills-3" class="content-wrap-item col-large-3">
+                            <!-- <div class="box-shadow">
+                                <a href="#"><img src="images/21.jpg" alt="Javascript"></a>
+                            </div> -->
+                            <div class="content-wrap-item style">
+                                <div class="ch-item ch-img-3"></div>
+                            </div>
+                            <a href="#"><h3>Lorem ipsum dolor</h3></a>
+                            <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                    <!-- // Flex Boxes end here -->
+                </section>
+
+
+                <!-- Projects -->
+                <section class="projects" id="projects">
+                    <h2 class="text-center">Folio</h2>
+                    <!-- Flex Boxes start here -->
+
+                    <div class="content-wrap">
+                        <div class="content-wrap-item projects-wrapper">
+                            <a href="#"><img src="images/folio/001-bride.svg" alt=""></a>
+                            <div class="project-overlay">
+                                <span class="text">
+                                    <h2>Template Beauty</h2>
+                                    <h3>Flexbox Layout</h3>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="content-wrap-item projects-wrapper">
+                            <a href="#"><img src="images/folio/002-confetti.svg" alt=""></a>
+                            <div class="project-overlay">
+                                <span class="text">
+                                    <h2>Template Fun</h2>
+                                    <h3>Use new CSS3 features</h3>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="content-wrap-item projects-wrapper">
+                            <a href="#"><img src="images/folio/003-forest.svg" alt=""></a>
+                            <div class="project-overlay">
+                                <span class="text">
+                                    <h2>Template Forest</h2>
+                                    <h3>Use 940 grid responsive with fixed size boxes</h3>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="content-wrap-item projects-wrapper">
+                            <a href="#"><img src="images/folio/004-forms.svg" alt=""></a>
+                            <div class="project-overlay">
+                                <span class="text">
+                                    <h2>Template Form</h2>
+                                    <h3>Create a contact form with JavaScript</h3>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="content-wrap-item projects-wrapper">
+                            <a href="#"><img src="images/folio/005-library.svg" alt=""></a>
+                            <div class="project-overlay">
+                                <span class="text">
+                                    <h2>Template Study</h2>
+                                    <h3>Use Bootstrap 3.3.7</h3>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="content-wrap-item projects-wrapper">
+                            <a href="#"><img src="images/folio/006-sheep.svg" alt=""></a>
+                            <div class="project-overlay">
+                                <span class="text">
+                                    <h2>Template Wolly</h2>
+                                    <h3>Apply CSS3 Transitions</h3>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // Flex Boxes end here -->
+                </section>
+
+                <!-- Contact  -->
+                <section role="region" class="contact" id="contact">
+                    <h2 class="text-center">Get in touch with me</h2>
+
+                    <!-- Flex Boxes start here -->
+                    <div class="content-wrap">
+                        <div class="content-wrap-item">
+                            <!-- Contact Form -->
+                            <form id="contact" action="php/mail.php" method="post" name="contactform">
+                                <div class="contact-wrap">
+                                    <!-- Form input starts here -->
+                                    <input type="text" name="name" placeholder="Name" />
+                                    <input type="text" name="email" placeholder="Email" />
+
+                                    <textarea name="message" rows="8" cols="80" placeholder="Enter text here..."></textarea>
+                                    <input type="submit" name="submit" value="Submit">
+                                    <input type="reset" value="Clear">
+                                    <!-- End entering information and submit form -->
+                                </div>
+                            </form>
+                            <!-- // Contact Form -->
+                        </div>
+                    </div><!-- // Flex Boxes end here -->
+                </section><!-- // CONTACT -->
+            </main>
+        </div>
+        <!-- // Main Contents Area -->
+
+
+
+        <!-- Footer Area
+        ------------------------------------------>
+        <footer id="colophon" class="site-footer">
+            <div class="footer-wrapper">
+                <a href="http://elvis.rowan.edu/~dox0">Xuan Do</a>
+                <span class="float-right">
+                    <a href="http://validator.w3.org/check/referer" target="_blank">HTML5</a> / <a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3" target="_blank">CSS3</a>
+                </span>
+            </div>
+        </footer>
+    </div>
+    <!-- End of Page -->
+
+
+
+</body>
+</html>
