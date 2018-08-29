@@ -301,7 +301,7 @@
                     <div class="content-wrap">
                         <div class="content-wrap-item">
                             <!-- Contact Form -->
-                            <form id="gform" action="https://script.google.com/macros/s/AKfycbx7FE5H3xV2gEI0AYDA2RHX7O-IOmMGsg2556NSP-05_0FsKKl6/exec" method="post" name="contactform">
+                            <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbyUlvTWd0h3xwwPNm2B9Uczo-Oq1TgeoM4l_6M4cQ/exec"  name="contactform">
                                 <div class="contact-wrap">
                                     <!-- Form input starts here -->
                                     <input type="text" name="name" placeholder="Name" />
@@ -314,6 +314,11 @@
                                 </div>
                             </form>
                             <!-- // Contact Form -->
+                        </div>
+                        <div class="content-wrap-item">
+                            <div style="display:none;" id="thankyou_message">
+                                <h2><em>Thanks</em> for contacting me! I will get back to you soon!</h2>
+                            </div>
                         </div>
                     </div><!-- // Flex Boxes end here -->
                 </section><!-- // CONTACT -->
@@ -336,7 +341,8 @@
     </div>
     <!-- End of Page -->
 
-
+    <script data-cfasync="false" type="text/javascript"
+    src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
 </body>
 
 </html>
