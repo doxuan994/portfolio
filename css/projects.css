@@ -54,6 +54,6 @@
     margin: 0;
 }
 
-.projects-wrapper:hover .project-overlay {
+.projects-wrap-item:hover .project-overlay {
     opacity: 1;
 }
