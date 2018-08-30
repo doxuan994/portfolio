@@ -10,66 +10,47 @@ Date: 02/25/2018
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400,500,700');
 
 /* CSS Flexible Box Layout is used in this template */
-
-
 * {
     margin: 0;
     padding: 0;
 }
-
 *:focus {
     outline: none;
 }
-
 /* ------------------------------
 GLOBAL CSS
 ------------------------------ */
-
 :before, :after {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-
 body {
     font-family: 'Roboto Mono', monospace;
 }
-
 a {
     text-decoration: none;
     color: white;
 }
-
 li {
     list-style: none;
 }
-
-section > h1 {
-    padding: 15px;
-}
-
-section > h2 {
+h2 {
     font-size: 36px;
     font-weight: 900;
-    padding: 50px;
-    line-height: 1;
     text-transform: uppercase;
     color: #ef9020;
 }
-
 .text-center {
     text-align: center;
 }
-
 .float-right {
     float: right;
 }
-
 .inner-text {
     text-align: center;
     line-height: 2;
     color: #56656C;
-
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 240px;
