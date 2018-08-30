@@ -1,11 +1,11 @@
 #projects {
     background-color: #edebea;
 }
-.projects-wrapper {
+.projects-wrap-item {
     position: relative;
 }
 
-.projects-wrapper img {
+.projects-wrap-item img {
     height: 200px;
     width: 310px;
 
