@@ -1,0 +1,11 @@
+#skills {
+    margin-bottom: 72px;
+}
+#skills p,
+#skills a {
+    color: #56656C;
+    text-align: center;
+}
+.box {
+    padding-top: 36px;
+}

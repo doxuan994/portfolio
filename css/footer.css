@@ -1,7 +1,9 @@
 .footer-wrapper {
     padding: 15px;
-    /* background-color: #505050; */
 }
 .footer-wrapper a {
     color: black;
+}
+.footer-wrapper span {
+    float: right;
 }
