@@ -1,13 +1,11 @@
 /* CSS flex-box layout is a CSS3 web layout model */
-
 .content-wrap {
     display: flex;
-    /* flex-direction: row;
-    flex-wrap: wrap; */
-    flex-flow: row wrap; /* a shorthand flex-direction and flex-wrap */
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    align-content: center;
+    /* align-items: center; */
+    /* align-content: center; */
 }
 
 .content-wrap-item {

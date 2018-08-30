@@ -1,42 +1,30 @@
 .style {
-	width: 256px;
-	height: 256px;
-
+	width: 310px;
+	height: 310px;
 	margin: 0 auto;
+	padding: 25px;
 }
-
 .ch-item {
 	width: 100%;
 	height: 100%;
 	border-radius: 50%;
 	cursor: default;
-
-
-	box-shadow:
-	inset 0 0 0 1px rgba(255,255,255,0.1),
-	0 1px 2px rgba(0,0,0,0.1);
-
+	box-shadow: inset 0 0 0 1px rgba(255,255,255,0.1), 0 1px 2px rgba(0,0,0,0.1);
 	-webkit-transition: all 0.4s ease-in-out;
 	-moz-transition: all 0.4s ease-in-out;
 	-o-transition: all 0.4s ease-in-out;
 	-ms-transition: all 0.4s ease-in-out;
 	transition: all 0.4s ease-in-out;
-
-
 }
-
 .ch-img-1 {
 	background-image: url('../images/html/001-computer.svg');
 }
-
 .ch-img-2 {
 	background-image: url('../images/css/002-css.svg');
 }
-
 .ch-img-3 {
 	background-image: url('../images/js/ffe500-js-256.png');
 }
-
 /* Move white border circle out */
 .ch-item:hover {
 	box-shadow: inset 0 0 0 12px rgba(255,255,255,1), 0 1px 2px rgba(0,0,0,1);
