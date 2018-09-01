@@ -1,130 +1,92 @@
 /* mobile use */
 
 @media (max-width: 1000px) {
-
     #menu,
     #toggle-menu {
         background-color: #495c70;
     }
-
     #toggle-menu,
     #menu a {
         padding: 16.799999999999px 32px;
-    }
-
-
-    label#toggle-menu {
+        font-weight: bold;
         text-transform: uppercase;
-        font-weight: 100;
     }
-
     #menu li,
     #toggle-menu,
     #menu a {
         position: relative;
         display: block;
         color: white;
-        text-shadow: 1px 1px 0 rgba(0, 0, 0, .125);
     }
-
-    #menu > ul > li {
-        text-transform: uppercase;
-        font-weight: 100;
-        background-color: #495c70;
+    /* Display main menu or sub-menu when clicked */
+    #tm:checked + .main-menu {
+        display: block;
     }
-
-    #menu > ul > li > ul > li {
-        text-transform: none;
-        font-weight: 100;
-        background-color: #495c70;
+    #menu input[type="checkbox"]:checked + .sub-menu {
+        display: block;
     }
-
-    #menu > ul > li > ul > li > ul  li {
-        background-color: #495c70;
-    }
-
-
     /* Hide the ugly square box */
     #menu input[type="checkbox"],
     #menu ul span.drop-icon {
         display: none;
     }
 
+    /* Format main-menu */
     #menu .main-menu {
         display: none;
+        background-color: lightblue;
+        transition: all 0.5s ease;
     }
-
-    #tm:checked + .main-menu {
-        display: block;
-    }
-
+    /* Format sub-menu */
     #menu .sub-menu {
         display: none;
+        background-color: #495c70;
     }
-
-    #menu input[type="checkbox"]:checked + .sub-menu {
-        display: block;
+    #menu .sub-menu {
+        margin: 0 1em;
     }
-
+    /* Format sub-sub-menu */
+    #menu .sub-sub-menu {
+        background-color: lightblue;
+    }
 
 
     /* Format drop-icon */
-    #toggle-menu .drop-icon,
-    #menu li label.drop-icon {
-        position: absolute;
-        right: 1.5em;
-        top: 1.25em;
+    .wrapper.active .drop-icon {
+        transform: rotate(45deg) translate(-5px, -5px);
+    }
+    .wrapper.active .drop-icon:before {
+        transform: translate(10px, 0);
+    }
+    .wrapper.active .drop-icon:after {
+        transform: rotate(90deg) translate(10px, 0);
     }
 
-    #menu .drop-icon {
+    .drop-icon {
+        right: 1.9em;
+        top: 1.5em;
         line-height: 1;
+        position: absolute;
+        width: 13px;
+        height: 13px;
+        transition: 0.4s ease;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
     }
-
-
-    /* ---------------------------------------------
-                    NICE EFFECTS CSS
-    --------------------------------------------- */
-    #menu ul {
-        margin: 0;
-        padding: 0;
+    .drop-icon:before, .drop-icon:after {
+        position: absolute;
+        content: "";
+        display: inline-block;
+        width: 12px;
+        height: 3px;
+        background-color: #fff;
+        transition: 0.4s ease;
     }
-
-    #menu a {
-        transition: all .125s ease-in-out;
-        -webkit-transition: all .125s ease-in-out;
+    .drop-icon:after {
+        position: absolute;
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+        top: -5px;
+        left: 5px;
     }
-
-    #menu a:hover {
-        background-color: white;
-        color: #09c;
-    }
-
-    /* Format menu */
-    #menu li,
-    #toggle-menu,
-    #menu .sub-menu {
-        border-color: rgba(0, 0, 0, .05);
-    }
-
-    #menu li,
-    #toggle-menu {
-        border-width: 0 0 1px;
-    }
-
-    /* Format sub-menu */
-    #menu .sub-menu {
-        background-color: #444;
-        border-width: 1px 1px 0;
-        margin: 0 1em;
-    }
-
-    #menu .sub-menu li:last-child {
-       border-width: 0;
-    }
-
-    #menu .sub-menu a:hover {
-        color: #444;
-    }
-
-
 }
